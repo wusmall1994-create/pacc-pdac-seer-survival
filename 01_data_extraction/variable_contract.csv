@@ -1,0 +1,29 @@
+status,SEER_variable,analytic_role,public_repository_note
+required,Patient ID,Cluster robust standard errors and identify multiple eligible tumor records,Variable name only; never upload values
+required,Year of diagnosis,Cohort restriction and diagnosis era,No patient-level values shared
+required,Age recode with single ages and 85+,Eligibility and covariate,No patient-level values shared
+required,Sex,Baseline description and covariate,No patient-level values shared
+required,"Race recode (W, B, AI, API)",Baseline description and covariate,No patient-level values shared
+required,"Origin recode NHIA (Hispanic, Non-Hisp)",Baseline description and covariate,No patient-level values shared
+required,Primary Site - labeled,Pancreatic site restriction and subsite covariate,No patient-level values shared
+required,Histologic Type ICD-O-3,Define pACC and PDAC cohorts,No patient-level values shared
+required,Behavior code ICD-O-3,Restrict to malignant tumors,No patient-level values shared
+required,Diagnostic Confirmation,Require positive histologic confirmation,No patient-level values shared
+required,Type of Reporting Source,Exclude autopsy-only and death-certificate-only reports,No patient-level values shared
+required,Sequence number,Single-primary sensitivity analysis,No patient-level values shared
+required,Record number recode,Record-order quality control,No patient-level values shared
+required,Total number of in situ/malignant tumors for patient,Single-primary sensitivity analysis,No patient-level values shared
+required,Combined Summary Stage with Expanded Regional Codes (2004+),Localized regional distant and unknown stage classification,No patient-level values shared
+required,Vital status recode (study cutoff used),Overall survival event,No patient-level values shared
+required,Survival Days,Primary survival time scale,No patient-level values shared
+required,Survival months,Survival quality control,No patient-level values shared
+required,Survival months flag,Survival quality control,No patient-level values shared
+required,SEER cause-specific death classification,Cancer-specific death event,No patient-level values shared
+required,SEER other cause of death classification,Competing-death quality control,No patient-level values shared
+required,COD to site recode ICD-O-3 2023 Revision Expanded (1999+),Cause-of-death quality control,No patient-level values shared
+required,Grade Recode (thru 2017),Grade harmonization,No patient-level values shared
+required,Derived Summary Grade 2018 (2018+),Grade harmonization,No patient-level values shared
+required,RX Summ--Surg Prim Site (1998-2022),Cancer-directed surgery recoding,No patient-level values shared
+required,RX Summ--Surg Prim Site 2023 (2023+),Cancer-directed surgery recoding,No patient-level values shared
+required,"Chemotherapy recode (yes, no/unk)",Recorded chemotherapy covariate,No patient-level values shared
+required,Radiation recode,Recorded radiotherapy covariate,No patient-level values shared

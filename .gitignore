@@ -1,0 +1,47 @@
+# Restricted SEER data and local extraction artifacts
+01_data_extraction/*.txt
+01_data_extraction/*.dic
+01_data_extraction/*.sl
+01_data_extraction/*.slm
+01_data_extraction/*.gz
+
+# Patient-level and intermediate analytic data
+02_processed_data/
+*.rds
+*.RData
+*.rda
+
+# Generated results
+04_results/
+
+# Manuscripts, references, and submission files
+05_manuscript/
+*.docx
+*.doc
+*.pdf
+*.ris
+*.bib
+*.enw
+
+# Local environments, caches, logs, and editor files
+.venv/
+renv/library/
+renv/staging/
+.Rhistory
+.RData
+.Rproj.user/
+__pycache__/
+*.pyc
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Personal or machine-specific configuration
+.env
+.env.*
+!.env.example
+*.Rproj
