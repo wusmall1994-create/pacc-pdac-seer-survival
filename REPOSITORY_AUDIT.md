@@ -34,3 +34,7 @@ The `.gitignore` file provides a second barrier against accidental addition of r
 - Choose a software licence.
 - Add a formal repository citation after the author list is finalized.
 - Archive a tagged release in a DOI-issuing repository if required by the target journal.
+
+## Revision code update
+
+Added portable revision scripts, a fail-fast runner and two independent raw-export validators. Public files contain code and documentation only. The four requested analysis categories are covered; generated results and patient-level data remain ignored. Legacy scripts are retained and their superseded results are explicitly identified in the revision README.

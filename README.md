@@ -1,8 +1,22 @@
-# Stage-specific and conditional survival of pACC versus PDAC
+# Conditional survival of pACC versus PDAC by SEER Summary Stage
 
 This repository contains the R analysis code for a population-based comparison of pancreatic acinar cell carcinoma (pACC) and pancreatic ductal adenocarcinoma (PDAC) using SEER 17 registry data from 2004 through 2023.
 
 The analysis estimates overall survival, conventional cancer-specific survival, competing-risk cumulative incidence, Fine-Gray subdistribution hazards, stage-specific associations, interval-specific hazards, and landmark conditional survival.
+
+## Revision analysis package
+
+The revision scripts and complete usage notes are in [03_analysis/revision](03_analysis/revision/README.md). They add follow-up-restricted and 8500-only conditional OS, included/excluded comparisons, PDAC calendar trends, era-specific conditional OS and independent raw-export validation. The extraction used SEER*Stat 9.0.43.0 with follow-up through December 31, 2023.
+
+After running the original pipeline, run:
+
+```text
+Rscript --vanilla 03_analysis/run_revision.R
+python 03_analysis/revision/validate_independent.py
+python 03_analysis/revision/validate_remaining.py
+```
+
+Outputs are written under the ignored `04_results/revision/` directory. The original pipeline remains available for reproduction; the new conditional-OS grid and calendar models supersede the corresponding historical outputs. Overall pACC conditional survival improved in common diagnosis cohorts, but the data do not support a general pACC-PDAC convergence conclusion.
 
 ## Data access and restrictions
 
@@ -85,7 +99,7 @@ REPOSITORY_AUDIT.md
 
 ## Scope of inference
 
-The analyses estimate prognostic associations and time-updated survival. Recorded treatment variables are used descriptively and in secondary prognostic adjustment, not to estimate causal treatment effects.
+The analyses estimate prognostic associations and time-updated survival. Recorded treatment variables are used descriptively and in exploratory prognostic adjustment, not to estimate causal treatment effects.
 
 ## Citation and licence
 
