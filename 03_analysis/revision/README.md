@@ -19,6 +19,7 @@ Required private inputs are the raw export in `01_data_extraction` and the RDS c
 - `analysis_remaining.R`: included/excluded comparisons at both the confirmation-filter step and otherwise-eligible population; flow reconciliation; calendar Cox models for pACC, pooled PDAC and 8500-only PDAC with patient-clustered robust variance; era-specific conditional OS with adequate potential follow-up.
 - `validate_independent.py`: independently reconstructs all new conditional OS estimates directly from raw TXT without R objects or survival libraries.
 - `validate_remaining.py`: independently checks selection counts, means-based SMDs, medians, and all era-specific conditional OS estimates and risk sets. It does not replicate Cox fitting.
+- `riskset_composition.R`: pACC landmark risk-set composition by age at diagnosis, diagnosis year and SEER Summary Stage for the full and common diagnosis cohorts.
 - `flow_diagram.R`: audited sequential flow diagram, PDF/SVG/PNG/600-dpi TIFF. Counts are fixed to this cohort and must be updated if eligibility changes.
 
 ## Definitions and interpretation

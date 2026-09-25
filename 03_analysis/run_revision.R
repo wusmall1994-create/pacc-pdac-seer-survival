@@ -12,5 +12,6 @@ run <- function(script,arguments) {
 }
 run('analysis_revision.R',c(project,file.path(out,'conditional_OS')))
 run('analysis_remaining.R',c(project,file.path(out,'selection_and_calendar')))
+run('riskset_composition.R',c(project,file.path(out,'conditional_OS','riskset_composition.csv')))
 run('flow_diagram.R',file.path(out,'figures'))
 message('Revision analyses completed. Run the two independent Python validators as documented.')

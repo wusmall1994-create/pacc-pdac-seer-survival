@@ -6,7 +6,7 @@ The analysis estimates overall survival, conventional cancer-specific survival, 
 
 ## Revision analysis package
 
-The revision scripts and complete usage notes are in [03_analysis/revision](03_analysis/revision/README.md). They add follow-up-restricted and 8500-only conditional OS, included/excluded comparisons, PDAC calendar trends, era-specific conditional OS and independent raw-export validation. The extraction used SEER*Stat 9.0.43.0 with follow-up through December 31, 2023.
+The revision scripts and complete usage notes are in [03_analysis/revision](03_analysis/revision/README.md). They add follow-up-restricted and 8500-only conditional OS, included/excluded comparisons, PDAC calendar trends, era-specific conditional OS, pACC landmark risk-set composition and independent raw-export validation. The extraction used SEER*Stat 9.0.43.0 with follow-up through December 31, 2023.
 
 After running the original pipeline, run:
 
